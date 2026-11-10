@@ -1,0 +1,44 @@
+{
+    "experiment": "Loss Function Ablation",
+    "baseline": {
+        "architecture": "U-Net",
+        "loss": "Cross-Entropy"
+    },
+    "proposed": {
+        "architecture": "U-Net",
+        "loss": "Cross-Entropy + Soft Dice"
+    },
+    "metrics": {
+        "precision": {
+            "baseline": 0.965582602820107,
+            "proposed": 0.9721038904785415,
+            "absolute_change": 0.006521287658434516,
+            "percentage_point_change": 0.6521287658434516
+        },
+        "recall": {
+            "baseline": 0.8711696203831302,
+            "proposed": 0.8496885322432898,
+            "absolute_change": -0.0214810881398404,
+            "percentage_point_change": -2.14810881398404
+        },
+        "f1": {
+            "baseline": 0.9159495972519859,
+            "proposed": 0.9067833608119283,
+            "absolute_change": -0.00916623644005754,
+            "percentage_point_change": -0.916623644005754
+        },
+        "iou": {
+            "baseline": 0.8449326663502906,
+            "proposed": 0.8294635558103042,
+            "absolute_change": -0.015469110539986453,
+            "percentage_point_change": -1.5469110539986453
+        }
+    },
+    "best_model_by_metric": {
+        "precision": "Proposed",
+        "recall": "Baseline",
+        "f1": "Baseline",
+        "iou": "Baseline"
+    },
+    "overall_interpretation": "The proposed compound loss improves precision but does not improve overall segmentation performance on the test split, as F1 and IoU are lower than the baseline."
+}
