@@ -1,0 +1,12 @@
+{
+    "model": "U-Net + Cross-Entropy + Soft Dice",
+    "test_samples": 30,
+    "precision": 0.9721038904785415,
+    "recall": 0.8496885322432898,
+    "f1": 0.9067833608119283,
+    "iou": 0.8294635558103042,
+    "true_positive": 529644,
+    "false_positive": 15199,
+    "false_negative": 93695,
+    "true_negative": 1327542
+}
